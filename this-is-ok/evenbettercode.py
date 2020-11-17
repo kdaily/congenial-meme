@@ -3,4 +3,4 @@
 """
 
 def do_anything():
-    print("Anything")
+    print("Nothing.")
