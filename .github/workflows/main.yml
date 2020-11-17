@@ -6,7 +6,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: aws-actions/pr-regex-exclude@<commit_sha>
+      - uses: aws-actions/pr-regex-exclude@v5
         with:
           exclude-regex: 'dont-touch-me\/*.py'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
