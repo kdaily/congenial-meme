@@ -2,5 +2,5 @@
 
 """
 
-def do_anything():
-    print("Anything")
+def do_nothing():
+    print("Nothing")
