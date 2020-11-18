@@ -3,8 +3,8 @@
 """
 
 def do_something():
-  """Do something.
+    """Do something.
 
-  """
+    """
   
-  print "Something"
+    print("Something")
