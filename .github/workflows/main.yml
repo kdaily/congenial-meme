@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: aws-actions/pr-regex-exclude@v5
         with:
-          exclude-regex: 'dont-touch-me\/*.py'
+          exclude-regex: 'dont-touch-me\/.*\.py'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           message: |
                    Thank you for submitting this PR, but it appears that at least one file in this
