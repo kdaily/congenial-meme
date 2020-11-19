@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: aws-actions/pr-regex-exclude@extra-debug
         with:
-          exclude-regex: '["dont-touch-me\/.*\.py", "also-dont-touch\/", "doesnt-exist/"]'
+          exclude-regex: '["dont-touch-me\/", "also-dont-touch\/", "doesnt-exist/"]'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           message: >
                    Thank you for submitting this PR, but it appears that at least one file 
