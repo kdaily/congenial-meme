@@ -6,11 +6,15 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: aws-actions/pr-regex-exclude@v5
+      - uses: aws-actions/pr-regex-exclude@v7
         with:
-          exclude-regex: 'dont-touch-me\/.*\.py|also-dont-touch\/|doesnt-exist/'
+          exclude-regex: '["dont-touch-me\/.*\.py", "also-dont-touch\/", "doesnt-exist/"]'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          message: |
-                   Thank you for submitting this PR, but it appears that at least one file in this request is against a part of our codebase that does not accept pull requests. Please check the [contributing guide](./CONTRIBUTING.md) for more information.
+          message: >
+                   Thank you for submitting this PR, but it appears that at least one file 
+                   in this request is against a part of our codebase that does not accept 
+                   pull requests. Please check the [contributing guide](./CONTRIBUTING.md) 
+                   for more information.
+                   
                    
                    I am a bot; this action was performed automatically.
