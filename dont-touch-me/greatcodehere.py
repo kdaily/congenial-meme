@@ -7,4 +7,4 @@ def do_something():
 
   """
   
-  print("Something")
+  print("No")
